@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(to bottom right,rgb(158, 99, 197), rgb(211, 139, 67));
+  height: 100vh;
+  ::-webkit-scrollbar{
+    background-color: rgb(158, 99, 197);
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(200,200,200,0.4);
+  }
+}
+
+input {
+  height: 40px;
+  font-size: 25px;
+}
+
+input :focus{
+  box-shadow: none;
+}
+
+.search-container {
+ position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 30%;
+  max-height: 400px;
+}
+
+.search-container input,
+.search-container .suggestions {
+  border-color: rgb(201, 103, 5);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  font-family: 'Kanit', sans-serif;
+  width: 300px;
+  background-color: rgb(202, 148, 94);
+}
+
+
+
+.search-container .suggestions{
+  position: absolute;
+  max-height: 400px;
+  width: 304px;
+  overflow-y: auto;
+  display: none;
+  padding-top: 0px;
+  
+}
+
+ul {
+  position: relative;
+  background-color: rgb(200,200,200,0.2);
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  font-size: 18px;
+}
+
+ul li:hover {
+  color: lightgrey;
+  background-color: rgb(158, 99, 197);
+  font-weight: 1000;
+}
